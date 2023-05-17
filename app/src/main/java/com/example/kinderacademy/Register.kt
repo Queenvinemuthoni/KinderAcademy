@@ -9,19 +9,21 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+// import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
+// import com.google.firebase.firestore.auth.User
+// import com.google.firebase.ktx.Firebase
 
 
 class Register : AppCompatActivity() {
-    lateinit var logo:ImageView
-    lateinit var username:EditText
-    lateinit var enteremail:EditText
-    lateinit var enterphone:EditText
-    lateinit var enterpass:EditText
-    lateinit var confirmpass:EditText
-    lateinit var register: Button
-    lateinit var gototlogin:TextView
+    private lateinit var logo:ImageView
+    private lateinit var username:EditText
+    private lateinit var enteremail:EditText
+    private lateinit var enterphone:EditText
+    private lateinit var enterpass:EditText
+    private lateinit var confirmpass:EditText
+    private lateinit var register: Button
+    private lateinit var gototlogin:TextView
 
     private lateinit var auth:FirebaseAuth
 
@@ -42,6 +44,9 @@ class Register : AppCompatActivity() {
 
         register.setOnClickListener {
             SignUpUser()
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+
 
         }
         gototlogin.setOnClickListener {
@@ -62,11 +67,10 @@ class Register : AppCompatActivity() {
 
         }
         auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this) {
+            var ref=FirebaseDatabase.getInstance().getReference().child("Users/$pass")
             if (it.isSuccessful){
-                register.setOnClickListener{
-                    val intent = Intent(this, Login::class.java)
-                    startActivity(intent)
-                }
+                Toast.makeText(this,"created",Toast.LENGTH_LONG).show()
+
             }else{
                 Toast.makeText(this,"Failed to create",Toast.LENGTH_LONG).show()
             }

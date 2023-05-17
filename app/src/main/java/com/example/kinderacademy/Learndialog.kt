@@ -31,7 +31,7 @@ class Learndialog : AppCompatActivity() {
         }
 
         backbtn.setOnClickListener{
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 

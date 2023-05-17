@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.os.Handler
 import android.widget.ImageButton
 
 class Apple : AppCompatActivity() {
@@ -35,7 +36,8 @@ class Apple : AppCompatActivity() {
             mediaPlayer.setDataSource(this, Uri.parse("android.resource://"+this.packageName+"/"+R.raw.a))
             mediaPlayer.prepare()
             mediaPlayer.start()
-        }
+
+         }
 
         }
     }

@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class Login : AppCompatActivity() {
     lateinit var Appname: ImageView
@@ -33,6 +34,8 @@ class Login : AppCompatActivity() {
 
         btnlogin.setOnClickListener {
             login()
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
         }
 
         gotoregister.setOnClickListener {
@@ -48,13 +51,13 @@ class Login : AppCompatActivity() {
         val pass = loginpass.text.toString()
 
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
+            var ref= FirebaseDatabase.getInstance().getReference().child("Users/$pass")
             if (it.isSuccessful) {
-                btnlogin.setOnClickListener{
-                    val intent = Intent(this, HomeActivity::class.java)
-                    startActivity(intent)
-                }
-            } else
-                Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"created",Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(this,"Failed to create",Toast.LENGTH_LONG).show()
+            }
+
         }
 
 

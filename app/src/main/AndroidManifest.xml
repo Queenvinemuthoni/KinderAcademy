@@ -96,25 +96,16 @@
             android:name=".Apple"
             android:exported="false" />
         <activity
-            android:name=".Gamescolor"
-            android:exported="false" />
-        <activity
             android:name=".Colors"
             android:exported="false" />
         <activity
             android:name=".Alphabet"
             android:exported="false" />
         <activity
-            android:name=".Result"
-            android:exported="false" />
-        <activity
-            android:name=".Quiz"
-            android:exported="false" />
-        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".Register"
