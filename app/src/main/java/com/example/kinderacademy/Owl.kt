@@ -1,5 +1,6 @@
 package com.example.kinderacademy
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ class Owl : AppCompatActivity() {
     lateinit var owl: ImageButton
     lateinit var O: Button
     lateinit var sound: ImageButton
+    lateinit var backbtn:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,12 @@ class Owl : AppCompatActivity() {
         owl=findViewById(R.id.owl)
         O=findViewById(R.id.O)
         sound=findViewById(R.id.soundred)
+        backbtn=findViewById(R.id.buttonback)
+
+        backbtn.setOnClickListener{
+            val intent = Intent(this, Alphabet::class.java)
+            startActivity(intent)
+        }
 
         owl.setOnClickListener{
             mediaPlayer.setDataSource(this, Uri.parse("android.resource://"+this.packageName+"/"+R.raw.o))

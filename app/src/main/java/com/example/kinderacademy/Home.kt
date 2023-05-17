@@ -17,17 +17,11 @@ class HomeActivity : AppCompatActivity(){
     private lateinit var btnLearnXGames2: Button
 
     lateinit var buttonlearn:Button
-    lateinit var btnlogin:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        btnlogin=findViewById(R.id.buttonlogin)
-        btnlogin.setOnClickListener {
-            val intent = Intent(this,Register::class.java)
-            startActivity(intent)
-        }
 
         epicDialog = Dialog(this)
 

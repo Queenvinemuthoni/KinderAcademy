@@ -33,6 +33,7 @@ class Alphabet : AppCompatActivity() {
     lateinit var x:Button
     lateinit var y:Button
     lateinit var z:Button
+    lateinit var backbtn:Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,6 +66,7 @@ class Alphabet : AppCompatActivity() {
         x=findViewById(R.id.button_x)
         y=findViewById(R.id.button_y)
         z=findViewById(R.id.button_z)
+        backbtn=findViewById(R.id.buttonback)
 
         a.setOnClickListener {
             val intent = Intent(this, Apple::class.java)
@@ -168,6 +170,11 @@ class Alphabet : AppCompatActivity() {
         }
         z.setOnClickListener {
             val intent = Intent(this, Zebra::class.java)
+            startActivity(intent)
+        }
+
+        backbtn.setOnClickListener{
+            val intent = Intent(this, Learndialog::class.java)
             startActivity(intent)
         }
 

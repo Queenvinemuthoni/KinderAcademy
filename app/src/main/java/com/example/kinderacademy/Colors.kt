@@ -1,5 +1,6 @@
 package com.example.kinderacademy
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ class Colors : AppCompatActivity() {
     lateinit var soundred:ImageButton
     lateinit var soundblue:ImageButton
     lateinit var soundyellow:ImageButton
+    lateinit var btnback:Button
 
     private lateinit var mediaPlayer: MediaPlayer
 
@@ -26,6 +28,12 @@ class Colors : AppCompatActivity() {
         soundred=findViewById(R.id.soundred)
         soundblue=findViewById(R.id.soundblue)
         soundyellow=findViewById(R.id.soundyellow)
+        btnback=findViewById(R.id.buttonback)
+
+        btnback.setOnClickListener{
+            val intent= Intent(this, Learndialog::class.java)
+            startActivity(intent)
+        }
 
         soundgreen.setOnClickListener{
             mediaPlayer.setDataSource(this, Uri.parse("android.resource://"+this.packageName+"/"+R.raw.green))
