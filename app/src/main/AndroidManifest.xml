@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KinderAcademy"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Learndialog"
+            android:exported="false" />
+        <activity
+            android:name=".Zebra"
+            android:exported="false" />
+        <activity
+            android:name=".Yoyo"
+            android:exported="false" />
+        <activity
+            android:name=".Xylophone"
+            android:exported="false" />
+        <activity
+            android:name=".Wolf"
+            android:exported="false" />
+        <activity
+            android:name=".Van"
+            android:exported="false" />
+        <activity
+            android:name=".Umbrella"
+            android:exported="false" />
+        <activity
+            android:name=".Tortoise"
+            android:exported="false" />
+        <activity
+            android:name=".Socks"
+            android:exported="false" />
+        <activity
+            android:name=".Rabbit"
+            android:exported="false" />
+        <activity
+            android:name=".Queen"
+            android:exported="false" />
+        <activity
+            android:name=".Panda"
+            android:exported="false" />
+        <activity
+            android:name=".Owl"
+            android:exported="false" />
+        <activity
+            android:name=".Nest"
+            android:exported="false" />
+        <activity
+            android:name=".Mango"
+            android:exported="false" />
+        <activity
+            android:name=".Ladder"
+            android:exported="false" />
+        <activity
+            android:name=".Kite"
+            android:exported="false" />
+        <activity
+            android:name=".Jar"
+            android:exported="false" />
+        <activity
+            android:name=".Icecream"
+            android:exported="false" />
+        <activity
+            android:name=".Guitar"
+            android:exported="false" />
+        <activity
+            android:name=".Firetruck"
+            android:exported="false" />
+        <activity
+            android:name=".Horse"
+            android:exported="false" />
+        <activity
+            android:name=".Elephant"
+            android:exported="false" />
+        <activity
+            android:name=".Doc"
+            android:exported="false" />
+        <activity
+            android:name=".Cabbage"
+            android:exported="false" />
+        <activity
+            android:name=".Banana"
+            android:exported="false" />
+        <activity
+            android:name=".Apple"
+            android:exported="false" />
+        <activity
+            android:name=".Gamescolor"
+            android:exported="false" />
+        <activity
+            android:name=".Colors"
+            android:exported="false" />
+        <activity
+            android:name=".Alphabet"
+            android:exported="false" />
+        <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "299253343056",
+    "project_id": "kinde-f7a4c",
+    "storage_bucket": "kinde-f7a4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299253343056:android:df5128192f1d09f26ec255",
+        "android_client_info": {
+          "package_name": "com.example.kinderacademy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299253343056-kriou8vtnghl3g3ia0rcrs44d6g3dt09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMuRVb4b9LvBz9xVcK89Z7S3GG7kxO8S0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299253343056-kriou8vtnghl3g3ia0rcrs44d6g3dt09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="250dp"
+        android:layout_height="380dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="155dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginBottom="206dp"
+                android:src="@drawable/learnicon" />
+
+            <Button
+                android:id="@+id/button_mixcolor"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="170dp"
+                android:layout_height="206dp"
+                android:layout_below="@id/button_alfabeth"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="-111dp"
+                android:layout_marginEnd="41dp"
+                android:layout_marginBottom="49dp"
+                android:background="@drawable/buttongreen"
+                android:fontFamily="@font/berlinlight"
+                android:text="Colors"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="69dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginBottom="282dp"
+                android:background="@drawable/buttongreen"
+                android:clickable="false"
+                android:fontFamily="@font/berlinlight"
+                android:text="Learn"
+                android:textAllCaps="false"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button_alfabeth"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="168dp"
+                android:layout_height="69dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="151dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="144dp"
+                android:background="@drawable/buttongreen"
+                android:fontFamily="@font/berlinlight"
+                android:text="Alphabet"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:elevation="@dimen/cardview_default_elevation"
+        android:id="@+id/button_xlearn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/buttonforexitpopup"
+        android:src="@drawable/closepopup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="387dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/splashlogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
